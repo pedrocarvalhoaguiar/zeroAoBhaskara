@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>Zero ao Bhaskara</title>
+</head>
+<body id="home">
+    <header>
+        <div class="container">
+            <div class="img-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="avaliacoes.html">Avaliações</a></li>
+                    <li><a href="calculadora.html" class="active">Calculadora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-calc">
+            <div class="operacoes">
+                <div class="op">
+                    <button class="soma"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="op">
+                    <button class="subtracao"><i class="fas fa-minus"></i></button>
+                </div>
+                <div class="op">
+                    <button class="multiplicacao"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="op">
+                    <button class="divisao"><i class="fas fa-divide"></i></button>
+                </div>
+            </div>
+            <div class="calculo">
+                <div class="calculo-soma">
+                    <div class="camp-soma">
+                        <input type="number" min="1" max="99" id="parcela1" name="parcela1" placeholder="0">
+                        <label for="parcela1">Parcela</label>
+                    </div>
+                    
+                    <div class="camp-soma">
+                        <input type="number" min="1" max="99" id="parcela2" name="parcela2" placeholder="0">
+                        <label for="parcela2">Parcela</label>
+                    </div>
+                    <div class="camp-soma">
+                        <hr class="barra">
+                    </div>
+                    <div class="camp-soma">
+                        <input type="text" id="total" name="total" onkeydown="return false">
+                        <label for="total">Total</label>
+                    </div>
+                </div>
+                <div class="calculo-sub">
+                    <div class="camp-soma">
+                        <input type="number" min="1" max="99" id="minuendo" name="minuendo" placeholder="0">
+                        <label for="parcela1">Minuendo</label>
+                    </div>
+                    
+                    <div class="camp-soma">
+                        <input type="number" min="1" max="99" id="subtraendo" name="subtraendo" placeholder="0">
+                        <label for="parcela2">Subtraendo</label>
+                    </div>
+                    <div class="camp-soma">
+                        <hr class="barra">
+                    </div>
+                    <div class="camp-soma">
+                        <input type="text" id="diferenca" name="diferenca" onkeydown="return false">
+                        <label for="total">Diferença</label>
+                    </div>
+                </div>
+                <div class="calculo-mult">
+                    <div class="camp-soma">
+                        <input type="number" min="1" max="99" id="fator1" name="fator1" placeholder="0">
+                        <label for="fator1">Fator</label>
+                    </div>                    
+                    <div class="camp-soma">
+                        <input type="number" min="1" max="99" id="fator2" name="fator2" placeholder="0">
+                        <label for="fator2">Fator</label>
+                    </div>
+                    <div class="camp-soma">
+                        <hr class="barra">
+                    </div>
+                    <div class="camp-soma">
+                        <input type="text" id="produto" name="produto" onkeydown="return false">
+                        <label for="produto">Produto</label>
+                    </div>
+                </div>            
+                <div class="calculo-divi">
+                    <div class="camp-soma">
+                        <input type="number" min="1" max="99" id="dividendo" name="dividendo" placeholder="0">
+                        <label for="dividendo">Dividendo</label>
+                    </div>
+                    <div class="camp-soma">
+                        <input type="number" min="1" max="99" id="divisor" name="divisor" placeholder="0">
+                        <label for="divisor">Divisor</label>
+                    </div>
+                    <div class="camp-soma">
+                        <hr class="barra">
+                    </div>
+                    <div class="camp-soma">
+                        <input type="text" id="quociente" name="quociente" onkeydown="return false">
+                        <label for="quociente">Quociente</label>
+                    </div>
+                    <div class="camp-soma">
+                        <input type="text" id="resto" name="resto" onkeydown="return false">
+                        <label for="resto">Resto</label>
+                    </div>
+                </div>
+            </div> 
+        </div>        
+    </main>
+    <footer>
+        <div class="footer-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="footer-copy" colspan="3">Copyright &copy; 2020, Pedro Carvalho - Todos os diretos reservados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="social-links">
+                        <td><a href="https://www.linkedin.com/in/pedro-carvalho-45ba291b5/" target="_blank"><i class="fab fa-linkedin icon-media"></a></td>
+                        <td><a href="https://github.com/pedrocarvalhoaguiar" target="_blank"><i class="fab fa-github icon-media"></a></td>
+                        <td><a href="https://twitter.com/EroHutor" target="_blank"><i class="fab fa-twitter icon-media"></a></td>      		
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </footer>
+    <a href="#home" class="button-top">
+        F(0) = 0
+    </a>
+    <script src="js/script.js"></script>
+</body>
+</html>
