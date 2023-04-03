@@ -3,7 +3,7 @@ document.querySelector("#parcela1").addEventListener('input', atualizarSoma)
 document.querySelector("#parcela2").addEventListener('change', atualizarSoma)
 document.querySelector("#parcela1").addEventListener('input', atualizarSoma)
 document.querySelector("#total").addEventListener('change', atualizarSoma)
-
+console.log(process.env.TESTE)
 function atualizarSoma(){
     let parcela1 = document.querySelector("#parcela1").value
     let parcela2 = document.querySelector("#parcela2").value
